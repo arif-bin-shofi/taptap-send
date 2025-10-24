@@ -7,57 +7,8 @@
   <title>Sendly — Fast & Secure Money Transfers</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-    body {
-      font-family: 'Space Mono', sans-serif;
-      margin: 0;
-    }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #0b4d37 0%, #0f6848 100%);
-    }
-
-    .hero-pattern {
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230b4d37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    .feature-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .step-number {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, #0b4d37, #0f6848);
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-
-    .app-badge {
-      transition: transform 0.2s ease;
-    }
-
-    .app-badge:hover {
-      transform: scale(1.05);
-    }
-
-    .converter-container {
-      background: linear-gradient(135deg, #0b4d37, #0f6848);
-
-    }
-  </style>
+ 
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gradient-to-br from-green-50 to-green-100 text-green-900 antialiased">
@@ -113,21 +64,20 @@
         great rate. With fast transfers to mobile money wallets on popular networks, you can send money from your
         smartphone anytime.
       </p>
-      <div class="mt-8 flex flex-wrap gap-4">
-        <a href="#"
-          class="app-badge bg-black text-white px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg hover:shadow-xl">
-          <i class="fab fa-google-play text-2xl"></i>
+      <div class="badges-container" >
+        <a href="#" class="app-badge">
+          <i class="fab fa-google-play"></i>
           <div class="text-left">
             <div class="text-xs">GET IT ON</div>
-            <div class="text-lg font-semibold">Google Play</div>
+            <div class="text-lg">Google Play</div>
           </div>
         </a>
-        <a href="#"
-          class="app-badge bg-black text-white px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg hover:shadow-xl">
-          <i class="fab fa-apple text-2xl"></i>
+
+        <a href="#" class="app-badge">
+          <i class="fab fa-apple"></i>
           <div class="text-left">
             <div class="text-xs">Download on the</div>
-            <div class="text-lg font-semibold">App Store</div>
+            <div class="text-lg">App Store</div>
           </div>
         </a>
       </div>
