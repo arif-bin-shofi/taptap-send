@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sendly — Fast & Secure Money Transfers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    body {
+      font-family: 'Space Mono', sans-serif;
+      margin: 0;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #0b4d37 0%, #0f6848 100%);
+    }
+
+    .hero-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230b4d37' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #0b4d37, #0f6848);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .app-badge {
+      transition: transform 0.2s ease;
+    }
+
+    .app-badge:hover {
+      transform: scale(1.05);
+    }
+
+    .converter-container {
+      background: linear-gradient(135deg, #0b4d37, #0f6848);
+
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-green-50 to-green-100 text-green-900 antialiased">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-gradient-to-br backdrop-blur-sm shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-5">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.jpg" alt="icon"
+          class="w-14 h-14 rounded-full flex items-center justify-center overflow-hidden object-cover">
+        <span class="font-bold text-xl text-green-800">Sendly</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex gap-8 text-[18px] font-bold">
+        <a href="#" class="hover:text-green-700 transition-colors">Join our team</a>
+        <a href="#" class="hover:text-green-700 transition-colors">FAQs</a>
+        <a href="#" class="hover:text-green-700 transition-colors">Security</a>
+        <a href="#" class="hover:text-green-700 transition-colors">Contact</a>
+        <a href="#" class="hover:text-green-700 transition-colors">About</a>
+      </nav>
+
+      <!-- Buttons -->
+      <div class="flex items-center gap-4">
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden bg-green-100 p-2 rounded-lg text-green-800">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (Vertical) -->
+    <nav id="mobileMenu" class="hidden flex flex-col gap-4 text-[18px] font-bold md:hidden px-5 pb-5 bg-green-50">
+      <a href="#" class="hover:text-green-700 transition-colors">Join our team</a>
+      <a href="#" class="hover:text-green-700 transition-colors">FAQs</a>
+      <a href="#" class="hover:text-green-700 transition-colors">Security</a>
+      <a href="#" class="hover:text-green-700 transition-colors">Contact</a>
+      <a href="#" class="hover:text-green-700 transition-colors">About</a>
+
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center relative">
+    <!-- Text Content -->
+    <div class="flex flex-col justify-center md:mb-20">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+        Send money <span class="text-green-700">fast</span>, safe and secure.
+      </h1>
+      <p class="mt-6 text-lg text-green-800/80 max-w-lg">
+        Send money from the UK, EU, US, UAE, Canada and Australia to Africa, Asia, the Caribbean and Latin America at a
+        great rate. With fast transfers to mobile money wallets on popular networks, you can send money from your
+        smartphone anytime.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#"
+          class="app-badge bg-black text-white px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg hover:shadow-xl">
+          <i class="fab fa-google-play text-2xl"></i>
+          <div class="text-left">
+            <div class="text-xs">GET IT ON</div>
+            <div class="text-lg font-semibold">Google Play</div>
+          </div>
+        </a>
+        <a href="#"
+          class="app-badge bg-black text-white px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg hover:shadow-xl">
+          <i class="fab fa-apple text-2xl"></i>
+          <div class="text-left">
+            <div class="text-xs">Download on the</div>
+            <div class="text-lg font-semibold">App Store</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="relative flex justify-center lg:justify-center mt-8 lg:mt-0 z-0">
+      <img src="assets/screenshot.jpeg" alt="Send Money Illustration"
+        class="w-2/3 sm:w-1/2 md:w-2/5 lg:w-3/5 xl:w-1/2 rounded-3xl shadow-lg relative -mb-20 md:-mb-24 lg:-mb-28">
+      <!-- শুধু image overlap, div structure থাকছে আগের মতো -->
+    </div>
+  </section>
+
+  <!-- Currency Converter Section -->
+  <section class="max-w-7xl mx-auto relative z-10 -mt-24 md:-mt-32 lg:-mt-40 mb-10 px-6">
+    <div class="converter-container p-6 md:p-10 text-white bg-green-800/90 rounded-3xl relative">
+      <div class="grid lg:grid-cols-2 gap-10 mb-10 items-center">
+        <!-- Left info -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Get great rates every time.</h2>
+          <p class="text-lg text-green-100 mb-6">
+            Taptap Send is currently available to these countries. More countries coming soon.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <span class="font-medium">Live Rates</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <span class="font-medium">Market Data</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Currency Converter -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg w-full max-w-md mx-auto">
+          <h2 class="text-xl text-black font-bold text-center mb-4">Currency Converter</h2>
+
+          <div class="grid grid-cols-2 gap-3 mb-4">
+            <div id="fromDropdown" class="relative">
+              <button id="fromBtn" class="w-full border rounded-lg p-2 flex items-center justify-between">
+                <span id="fromLabel" class="text-black">Select From</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <ul id="fromList"
+                class="absolute hidden z-10 bg-white border text-black rounded-lg w-full max-h-48 overflow-y-auto">
+              </ul>
+            </div>
+
+            <div id="toDropdown" class="relative">
+              <button id="toBtn" class="w-full border rounded-lg p-2 flex items-center justify-between">
+                <span id="toLabel" class="text-black">Select To</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <ul id="toList"
+                class="absolute hidden z-10 bg-white border text-black rounded-lg w-full max-h-48 overflow-y-auto">
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="text-gray-700 text-sm">You send (<span id="fromCur">USD</span>)</label>
+            <input id="amount" type="number" value="1" class="w-full border text-black rounded-lg p-2 mt-1">
+          </div>
+
+          <div class="mb-3">
+            <label class="text-gray-700 text-sm">They receive (<span id="toCur">BDT</span>)</label>
+            <input id="result" readonly class="w-full border rounded-lg p-2 text-black mt-1 bg-gray-100">
+          </div>
+
+          <p id="rate" class="text-gray-600 text-center text-sm mt-2">Loading rate...</p>
+        </div>
+      </div>
+
+      <!-- Country List -->
+      <div id="countryList" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-10">
+        <!-- JS থেকে populate হবে -->
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden">
+            <img src="assets/logo.jpg" alt="icon" class=" object-cover">
+          </div>
+          <span class="font-bold text-xl">Sendly</span>
+        </div>
+        <p class="text-green-100 max-w-md mb-6">Fast, reliable money transfers worldwide. Send love, not just money.</p>
+        <div class="flex gap-4">
+          <a href="#"
+            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#"
+            class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-3 text-sm text-green-100">
+          <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Security</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Press</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg mb-4">Contact</h3>
+        <ul class="space-y-3 text-sm text-green-100">
+          <li class="flex items-center gap-2">
+            <i class="fas fa-envelope"></i>
+            <span>support@sendly.com</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-phone"></i>
+            <span>+88017xxxxxxxx</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Vola, BTD</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-green-700 text-center text-green-200 text-sm">
+      © <span id="year"></span> Sendly — All rights reserved. Sendly Financial Ltd is authorised by the Financial
+      Conduct Authority.
+    </div>
+  </footer>
+
+  <script>
+
+
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const fromBtn = document.getElementById('fromBtn');
+    const toBtn = document.getElementById('toBtn');
+    const fromList = document.getElementById('fromList');
+    const toList = document.getElementById('toList');
+    const fromLabel = document.getElementById('fromLabel');
+    const toLabel = document.getElementById('toLabel');
+    const amount = document.getElementById('amount');
+    const result = document.getElementById('result');
+    const rateText = document.getElementById('rate');
+    const fromCur = document.getElementById('fromCur');
+    const toCur = document.getElementById('toCur');
+    let fromCode = 'USD';
+    let toCode = 'BDT';
+
+    async function loadCurrencies() {
+      const res = await fetch('currencies.json');
+      const data = await res.json();
+
+      data.forEach(item => {
+        // From dropdown
+        const liFrom = document.createElement('li');
+        liFrom.className = 'p-2 flex items-center gap-2 cursor-pointer hover:bg-green-100 hover:text-green-900';
+        liFrom.innerHTML = `
+    <img src="flags/${item.image}" class="w-5 h-5 rounded">
+    <span class="flex-1 text-black">${item.country} (${item.code})</span>
+  `;
+        liFrom.onclick = () => {
+          fromCode = item.code;
+          fromLabel.innerHTML = `<img src="flags/${item.image}" class="w-5 h-5 rounded inline mr-2">${item.code}`;
+          fromCur.textContent = item.code;
+          fromList.classList.add('hidden');
+          fetchRate();
+        };
+        fromList.appendChild(liFrom);
+
+        // To dropdown
+        const liTo = document.createElement('li');
+        liTo.className = 'p-2 flex items-center gap-2 cursor-pointer hover:bg-green-100 hover:text-green-900';
+        liTo.innerHTML = ` <img src="flags/${item.image}" class="w-5 h-5 rounded">
+        <span class="flex-1 text-black">${item.country} (${item.code})</span>`;
+        liTo.onclick = () => {
+          toCode = item.code;
+          toLabel.innerHTML = `<img src="flags/${item.image}" class="w-5 h-5 rounded inline mr-2">${item.code}`;
+          toCur.textContent = item.code;
+          toList.classList.add('hidden');
+          fetchRate();
+        };
+        toList.appendChild(liTo);
+      });
+
+
+      // default
+      fromLabel.innerHTML = `<img src="flags/en.png" class="w-5 h-5  rounded inline mr-2">USD`;
+      toLabel.innerHTML = `<img src="flags/bn.png" class="w-5 h-5 rounded inline mr-2">BDT`;
+
+      fetchRate();
+    }
+
+    fromBtn.addEventListener('click', () => fromList.classList.toggle('hidden'));
+    toBtn.addEventListener('click', () => toList.classList.toggle('hidden'));
+    amount.addEventListener('input', fetchRate);
+
+    let rateTodayText = 'Today rate: ';
+
+    async function fetchRate() {
+
+      const amt = amount.value || 1;
+      try {
+        const res = await fetch(`https://v6.exchangerate-api.com/v6/125f6116312ef7661e6d95e6/latest/${fromCode}`);
+        const data = await res.json();
+        if (data.result === "success") {
+          const rate = data.conversion_rates[toCode];
+
+          // Result value
+          result.value = (amt * rate).toFixed(2);
+
+          // Bold Today rate text
+          rateText.innerHTML = `<strong>${rateTodayText}</strong> 1 ${fromCode} = ${rate.toFixed(2)} ${toCode}`;
+        } else {
+          rateText.textContent = "Rate load failed: " + data["error-type"];
+        }
+      } catch (error) {
+        rateText.textContent = "Fetch error";
+      }
+    }
+
+
+    async function loadCountryList() {
+      const res = await fetch('currencies.json');
+      const data = await res.json();
+      const countryList = document.getElementById('countryList');
+
+      data.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'flex flex-col items-center text-center p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors';
+        div.innerHTML = `
+      <img src="flags/${item.image}" class="w-10 h-10 rounded-full mb-1" alt="${item.country}">
+      <span class="text-sm text-white">${item.country}</span>
+    `;
+        countryList.appendChild(div);
+      });
+    }
+
+    loadCountryList();
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+
+    loadCurrencies();
+  </script>
+</body>
+
+</html>

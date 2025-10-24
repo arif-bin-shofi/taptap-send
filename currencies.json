@@ -1,0 +1,413 @@
+[
+  {
+    "image": "en.png",
+    "lang_code": "en",
+    "title": "English",
+    "subtitle": "English",
+    "code": "USD",
+    "symbol_native": "$",
+    "country": "United States",
+    "country_number": "1"
+  },
+  {
+    "image": "bn.png",
+    "lang_code": "bn",
+    "title": "বাংলা",
+    "subtitle": "Bangla",
+    "code": "BDT",
+    "symbol_native": "৳",
+    "country": "Bangladesh",
+    "country_number": "88"
+  },
+ 
+  {
+    "image": "ps.png",
+    "lang_code": "ps",
+    "title": "پښتو",
+    "subtitle": "Pashto",
+    "code": "AFN",
+    "symbol_native": "؋",
+    "country": "Afghanistan",
+    "country_number": "93"
+  },
+  {
+    "image": "ar.png",
+    "lang_code": "ar",
+    "title": "العربية",
+    "subtitle": "Arabic",
+    "code": "SAR",
+    "symbol_native": "﷼",
+    "country": "Saudi Arabia",
+    "country_number": "966"
+  },
+  {
+    "image": "id.png",
+    "lang_code": "id",
+    "title": "Bahasa Indonesia",
+    "subtitle": "Indonesian",
+    "code": "IDR",
+    "symbol_native": "Rp",
+    "country": "Indonesia",
+    "country_number": "62"
+  },
+  {
+    "image": "ms.png",
+    "lang_code": "ms",
+    "title": "Bahasa Melayu",
+    "subtitle": "Malay",
+    "code": "MYR",
+    "symbol_native": "RM",
+    "country": "Malaysia",
+    "country_number": "60"
+  },
+  {
+    "image": "ur.png",
+    "lang_code": "ur",
+    "title": "اُردُو",
+    "subtitle": "Urdu",
+    "code": "PKR",
+    "symbol_native": "₨",
+    "country": "Pakistan",
+    "country_number": "92"
+  },
+  {
+    "image": "fa.png",
+    "lang_code": "fa",
+    "title": "فارسی",
+    "subtitle": "Farsi",
+    "code": "IRR",
+    "symbol_native": "﷼",
+    "country": "Iran",
+    "country_number": "98"
+  },
+  {
+    "image": "tr.png",
+    "lang_code": "tr",
+    "title": "Türkçe",
+    "subtitle": "Turkish",
+    "code": "TRY",
+    "symbol_native": "₺",
+    "country": "Turkey",
+    "country_number": "90"
+  },
+  {
+    "image": "ku.png",
+    "lang_code": "ku",
+    "title": "Kurdî",
+    "subtitle": "Kurdish",
+    "code": "IQD",
+    "symbol_native": "ع.د",
+    "country": "Iraq",
+    "country_number": "964"
+  },
+  {
+    "image": "hi.png",
+    "lang_code": "hi",
+    "title": "हिन्दी",
+    "subtitle": "Hindi",
+    "code": "INR",
+    "symbol_native": "₹",
+    "country": "India",
+    "country_number": "91"
+  },
+  {
+    "image": "es.png",
+    "lang_code": "es",
+    "title": "Español",
+    "subtitle": "Spanish",
+    "code": "EUR",
+    "symbol_native": "€",
+    "country": "Spain",
+    "country_number": "34"
+  },
+  {
+    "image": "fr.png",
+    "lang_code": "fr",
+    "title": "Français",
+    "subtitle": "French",
+    "code": "EUR",
+    "symbol_native": "€",
+    "country": "France",
+    "country_number": "33"
+  },
+  {
+    "image": "de.png",
+    "lang_code": "de",
+    "title": "Deutsch",
+    "subtitle": "German",
+    "code": "EUR",
+    "symbol_native": "€",
+    "country": "Germany",
+    "country_number": "49"
+  },
+  {
+    "image": "sq.png",
+    "lang_code": "sq",
+    "title": "Shqip",
+    "subtitle": "Albanian",
+    "code": "ALL",
+    "symbol_native": "L",
+    "country": "Albania",
+    "country_number": "355"
+  },
+  {
+    "image": "am.png",
+    "lang_code": "am",
+    "title": "አማርኛ",
+    "subtitle": "Amharic",
+    "code": "ETB",
+    "symbol_native": "Br",
+    "country": "Ethiopia",
+    "country_number": "251"
+  },
+  {
+    "image": "az.png",
+    "lang_code": "az",
+    "title": "Azərbaycan",
+    "subtitle": "Azerbaijani",
+    "code": "AZN",
+    "symbol_native": "₼",
+    "country": "Azerbaijan",
+    "country_number": "994"
+  },
+  {
+    "image": "ber.png",
+    "lang_code": "ber",
+    "title": "Tamaziɣt",
+    "subtitle": "Berber / Amazigh",
+    "code": "MAD",
+    "symbol_native": "MAD",
+    "country": "Morocco",
+    "country_number": "212"
+  },
+  {
+    "image": "bs.png",
+    "lang_code": "bs",
+    "title": "Bosanski",
+    "subtitle": "Bosnian",
+    "code": "BAM",
+    "symbol_native": "KM",
+    "country": "Bosnia and Herzegovina",
+    "country_number": "387"
+  },
+  {
+    "image": "bg.png",
+    "lang_code": "bg",
+    "title": "български",
+    "subtitle": "Bulgarian",
+    "code": "BGN",
+    "symbol_native": "лв",
+    "country": "Bulgaria",
+    "country_number": "359"
+  },
+  {
+    "image": "zh.png",
+    "lang_code": "zh",
+    "title": "中文",
+    "subtitle": "Chinese",
+    "code": "CNY",
+    "symbol_native": "¥",
+    "country": "China",
+    "country_number": "86"
+  },
+  {
+    "image": "cs.png",
+    "lang_code": "cs",
+    "title": "čeština",
+    "subtitle": "Czech",
+    "code": "CZK",
+    "symbol_native": "Kč",
+    "country": "Czech Republic",
+    "country_number": "420"
+  },
+  {
+    "image": "nl.png",
+    "lang_code": "nl",
+    "title": "Nederlands",
+    "subtitle": "Dutch",
+    "code": "EUR",
+    "symbol_native": "€",
+    "country": "Netherlands",
+    "country_number": "31"
+  },
+  {
+    "image": "ha.png",
+    "lang_code": "ha",
+    "title": "Harshen Hausa",
+    "subtitle": "Hausa",
+    "code": "NGN",
+    "symbol_native": "₦",
+    "country": "Nigeria",
+    "country_number": "234"
+  },
+  {
+    "image": "ko.png",
+    "lang_code": "ko",
+    "title": "한국어",
+    "subtitle": "Korean",
+    "code": "KRW",
+    "symbol_native": "₩",
+    "country": "South Korea",
+    "country_number": "82"
+  },
+  {
+    "image": "dv.png",
+    "lang_code": "dv",
+    "title": "ދިވެހި",
+    "subtitle": "Maldivian",
+    "code": "MVR",
+    "symbol_native": "ރ.",
+    "country": "Maldives",
+    "country_number": "960"
+  },
+  {
+    "image": "no.png",
+    "lang_code": "no",
+    "title": "Norsk Bokmål",
+    "subtitle": "Norwegian Bokmål",
+    "code": "NOK",
+    "symbol_native": "kr",
+    "country": "Norway",
+    "country_number": "47"
+  },
+  {
+    "image": "pl.png",
+    "lang_code": "pl",
+    "title": "Polszczyzna",
+    "subtitle": "Polish",
+    "code": "PLN",
+    "symbol_native": "zł",
+    "country": "Poland",
+    "country_number": "48"
+  },
+  {
+    "image": "pt.png",
+    "lang_code": "pt",
+    "title": "Português",
+    "subtitle": "Portuguese",
+    "code": "EUR",
+    "symbol_native": "€",
+    "country": "Portugal",
+    "country_number": "351"
+  },
+  {
+    "image": "ro.png",
+    "lang_code": "ro",
+    "title": "Română",
+    "subtitle": "Romanian",
+    "code": "RON",
+    "symbol_native": "lei",
+    "country": "Romania",
+    "country_number": "40"
+  },
+  {
+    "image": "ru.png",
+    "lang_code": "ru",
+    "title": "русский",
+    "subtitle": "Russian",
+    "code": "RUB",
+    "symbol_native": "₽",
+    "country": "Russia",
+    "country_number": "7"
+  },
+  {
+    "image": "sd.png",
+    "lang_code": "sd",
+    "title": "سنڌي",
+    "subtitle": "Sindhi",
+    "code": "PKR",
+    "symbol_native": "₨",
+    "country": "Pakistan",
+    "country_number": "92"
+  },
+  {
+    "image": "so.png",
+    "lang_code": "so",
+    "title": "Af Soomaali",
+    "subtitle": "Somali",
+    "code": "SOS",
+    "symbol_native": "S",
+    "country": "Somalia",
+    "country_number": "252"
+  },
+  {
+    "image": "sw.png",
+    "lang_code": "sw",
+    "title": "Kiswahili",
+    "subtitle": "Swahili",
+    "code": "KES",
+    "symbol_native": "Sh",
+    "country": "Kenya",
+    "country_number": "254"
+  },
+  {
+    "image": "sv.png",
+    "lang_code": "sv",
+    "title": "Svenska",
+    "subtitle": "Swedish",
+    "code": "SEK",
+    "symbol_native": "kr",
+    "country": "Sweden",
+    "country_number": "46"
+  },
+  {
+    "image": "tg.png",
+    "lang_code": "tg",
+    "title": "тоҷикӣ",
+    "subtitle": "Tajik",
+    "code": "TJS",
+    "symbol_native": "ЅМ",
+    "country": "Tajikistan",
+    "country_number": "992"
+  },
+  {
+    "image": "ta.png",
+    "lang_code": "ta",
+    "title": "தமிழ்",
+    "subtitle": "Tamil",
+    "code": "INR",
+    "symbol_native": "₹",
+    "country": "India",
+    "country_number": "91"
+  },
+  {
+    "image": "tt.png",
+    "lang_code": "tt",
+    "title": "татар теле",
+    "subtitle": "Tatar",
+    "code": "RUB",
+    "symbol_native": "₽",
+    "country": "Russia",
+    "country_number": "7"
+  },
+  {
+    "image": "th.png",
+    "lang_code": "th",
+    "title": "ไทย",
+    "subtitle": "Thai",
+    "code": "THB",
+    "symbol_native": "฿",
+    "country": "Thailand",
+    "country_number": "66"
+  },
+  {
+    "image": "ug.png",
+    "lang_code": "ug",
+    "title": "ئۇيغۇرچە",
+    "subtitle": "Uyghur",
+    "code": "CNY",
+    "symbol_native": "¥",
+    "country": "China",
+    "country_number": "86"
+  },
+  {
+    "image": "uz.png",
+    "lang_code": "uz",
+    "title": "Ўзбек / Oʻzbek",
+    "subtitle": "Uzbek",
+    "code": "UZS",
+    "symbol_native": "so'm",
+    "country": "Uzbekistan",
+    "country_number": "998"
+  }
+]
