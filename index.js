@@ -88,7 +88,6 @@ async function fetchRate() {
   }
 }
 
-
 async function loadCountryList() {
   const res = await fetch('currencies.json');
   const data = await res.json();
@@ -96,14 +95,22 @@ async function loadCountryList() {
 
   data.forEach(item => {
     const div = document.createElement('div');
-    div.className = 'flex flex-col items-center text-center p-2 bg-white/10 rounded-lg hover:bg-white/20 transition-colors';
+    div.className = `
+      flex items-center justify-start gap-2 text-white bg-white/10 
+      rounded-lg p-2 hover:bg-white/20 transition-colors
+      sm:flex-col sm:text-center sm:justify-center
+    `;
     div.innerHTML = `
-  <img src="flags/${item.image}" class="w-10 h-10 rounded-full mb-1" alt="${item.country}">
-  <span class="text-sm text-white">${item.country}</span>
-`;
+      <img src="flags/${item.image}" 
+           class="w-8 h-8 sm:w-10 sm:h-10 rounded-full" 
+           alt="${item.country}">
+      <span class="text-sm sm:text-base">${item.country}</span>
+    `;
     countryList.appendChild(div);
   });
 }
+
+loadCountryList();
 
 loadCountryList();
 const menuBtn = document.getElementById('menuBtn');
